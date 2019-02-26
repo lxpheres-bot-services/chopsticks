@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
   if (allowedid.includes(message.author.id)) {
     try {
       const code = args.join(" ");
-      let executed = executed(code);
+      let executed = exec(code);
  
       if (typeof executed !== "string")
         executed = require("util").inspect(executed);
