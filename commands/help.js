@@ -81,11 +81,11 @@ module.exports.run = async (bot, message, args) => {
 				description: "Commands for the Chopstick Bot!",
 				fields: [{
 					name: "Moderation",
-					value: "Coming soon!"
+					value: "`;announce` - Makes an announcement for the server."
 				},
 				{
 					name: "Utility",
-					value: "`;ping` - Replies with the bots ping. \n`;help` - Replies with this menu."
+					value: "`;ping` - Replies with the bots ping. \n`;help` - Replies with this menu. \n`;up` - Gives you the duration of how long the bot has been online."
 				},
 				{
 					name: "Developer Commands",
