@@ -16,25 +16,25 @@ module.exports.run = async (bot, message, args) => {
   if (allowedid.includes(message.author.id)) {
     try {
       const code = args.join(" ");
-      let evaled = eval(code);
+      let executed = execute(code);
  
-      if (typeof evaled !== "string")
-        evaled = require("util").inspect(evaled);
+      if (typeof executed !== "string")
+        executed = require("util").inspect(executed);
  
-      //message.channel.send(clean(evaled), {code:"xl"});
+      //message.channel.send(clean(executed), {code:"xl"});
       const client = bot;
     message.channel.send({embed: {
     color: 3066993,
     description: "\n",
     fields: [{
-        name: "Evaled!",
-        value: (`\`\`\`js\n${clean(evaled, bot.token).substring(0, 500)}\`\`\``)
+        name: "Executed!",
+        value: (`\`\`\`js\n${clean(executed, bot.token).substring(0, 500)}\`\`\``)
       },
     ],
     timestamp: new Date(),
     footer: {
       icon_url: message.author.avatarURL,
-      text: `Eval ran by ${message.author.tag}`
+      text: `Exec ran by ${message.author.tag}`
     }
   }
 });
@@ -50,7 +50,7 @@ module.exports.run = async (bot, message, args) => {
     timestamp: new Date(),
     footer: {
       icon_url: message.author.avatarURL,
-      text: `Eval ran by ${message.author.tag}`
+      text: `Exec ran by ${message.author.tag}`
     }
   }
 });
@@ -59,10 +59,10 @@ module.exports.run = async (bot, message, args) => {
 }
 
 module.exports.help = {
-	name: "eval",
-	usage: "eval <code>",
+	name: "exec",
+	usage: "exec <code>",
 	description: "nil",
-	longdes: "Evals the code given.",
+	longdes: "Executes the code given.",
 	mentionedperm: "DEVELOPER",
   category: "Developer"
 }
