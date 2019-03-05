@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
 						icon_url: bot.user.avatarURL
 					},
 					title: "Commands",
-					description: "Commands for Creamy'z Cafe Bot",
+					description: "Commands for Chopstick Bot",
 					fields: [{
 						name: "Name",
 						value: props.help.name,
@@ -81,7 +81,7 @@ module.exports.run = async (bot, message, args) => {
 				description: "Commands for the Chopstick Bot!",
 				fields: [{
 					name: "Moderation",
-					value: "`;announce` - Makes an announcement for the server."
+					value: "`;announce` - Makes an announcement for the server. \n`;hannounce` - Makes an announcement with the @ here ping."
 				},
 				{
 					name: "Utility",
