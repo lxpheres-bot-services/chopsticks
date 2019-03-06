@@ -22,7 +22,7 @@ module.exports.run = async () => {
 	});
 
 	client.on("ready", async () => {
-		client.user.setPresence({ game: { type: 3, name: "Soy House! <:soyhouse:552957877527248926> | ;help" }, status: "online" });
+		client.user.setPresence({ game: { type: 3, name: "Soy House!  | ;help" }, status: "online" });
 		console.log(`${client.user.tag} has started!`);
 		//rbx.login({ username: "CreamyzRankingBot", password: process.env.rblx});
 	});
