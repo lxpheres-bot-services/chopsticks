@@ -2,8 +2,8 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
 	if (!message.member.roles.get("542492271342518272")) return message.reply("Nope, not today! You need to be an HR+, nice try though.").catch(() => bot.safeSend(message, module.exports.help.name));
-	let embed = new Discord.RichEmbed()
-		.setTitle("Chopsticks Announcement")
+		let embed = new Discord.RichEmbed()
+		.setTitle("Soy House Announcement")
 		.setColor("#ff4b4b")
 		.setDescription(args.join(" "))
 		.setFooter(`Announcement made by ${message.author.tag}`, message.author.displayAvatarURL)
