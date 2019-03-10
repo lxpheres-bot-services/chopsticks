@@ -81,7 +81,7 @@ module.exports.run = async (bot, message, args) => {
 				description: "Commands for the Chopstick Bot!",
 				fields: [{
 					name: "Moderation",
-					value: "`;announce` - Makes an announcement for the server. \n`;kick` - Kicks a user out of the server. \n`;hannounce` - Makes an announcement with the @ here ping."
+					value: "`;announce` - Makes an announcement for the server. \n`;ban` - Bans a user from the server. \n`;kick` - Kicks a user out of the server. \n`;hannounce` - Makes an announcement with the @ here ping."
 				},
 				{
 					name: "Utility",
