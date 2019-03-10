@@ -1,5 +1,5 @@
 module.exports.run = async (bot, message, args) => {
-	if (!message.member.hasPermission("KICK_MEMBERS") return message.reply("Well well well, back again for some more? You need the `KICK_MEMBERS` permissiont to use this command, good try though!");
+	if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply("Well well well, back again for some more? You need the `KICK_MEMBERS` permissiont to use this command, good try though!");
 
 	let member = message.mentions.members.first() || message.guild.members.get(args[0]);
 	if (!member)
