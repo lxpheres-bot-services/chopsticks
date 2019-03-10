@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
 	if (!member)
 		return message.reply("Ah, so I want to kick the air? Please give me a user to kick!");
 	if (!member.kickable)
-		return message.reply("Hey seems like this person has a higher role than me, check my permissions and double check again!");
+		return message.reply("Hey seems like this person has a higher role than me, check my permissions and double try again!");
 
 	let reason = args.slice(1).join(" ");
 	if (!reason) reason = "No reason provided";
