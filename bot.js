@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const rbx = require("noblox.js");
+const noblox = require("noblox.js");
 module.exports.run = async () => {
 	const client = new Discord.Client({ disableEveryone: false, fetchAllMembers: true });
 
