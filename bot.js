@@ -22,30 +22,30 @@ module.exports.run = async () => {
 	});
 
 	client.on("ready", async () => {
-		client.user.setPresence({ game: { type: 3, name: "Soy House!  | ;help" }, status: "online" });
+		client.user.setPresence({ game: { type: 3, name: "Kauai Hotels! - ;help" }, status: "online" });
 		console.log(`${client.user.tag} has started!`);
 		//rbx.login({ username: "CreamyzRankingBot", password: process.env.rblx});
 	});
 
 	client.on("guildMemberAdd", (member) => {
-		const channel = member.guild.channels.find("name", "bot-logs");
+		const channel = member.guild.channels.find("name", "mod-logs");
 		if (!channel) return;
 		channel.send(`${member.user.tag} has joined the server!`);
 	});
 	client.on("guildMemberRemove", (member) => {
-		const channel = member.guild.channels.find("name", "bot-logs");
+		const channel = member.guild.channels.find("name", "mod-logs");
 		if (!channel) return;
 		channel.send(`${member.user.tag} has left the server!`);
 	});
 	client.on("messageDelete", async (message) => { if (message.author.bot) return;
-		let cha = message.guild.channels.find("name", "bot-logs");
+		let cha = message.guild.channels.find("name", "mod-logs");
 
 		if (!cha) return;
 
 		require("./resources/embed.js").mlog(cha, "Message Deleted", "Sent by **" + message.author.tag + "** (**" + message.author.id + "**) in <#" + message.channel.id + "> \n\n **__Content__**: \n" + message.content, message);
 	});
 	client.on("messageUpdate", async (message, newmessage) => { if (newmessage.content === message.content) return; if (message.author.bot) return;
-		let cha = message.guild.channels.find("name", "bot-logs");
+		let cha = message.guild.channels.find("name", "mod-logs");
 
 		if (!cha) return;
 
