@@ -24,6 +24,8 @@ module.exports.run = async () => {
 	client.on("ready", async () => {
 		client.user.setPresence({ game: { type: 3, name: "Kauai Hotels! - ;help" }, status: "online" });
 		console.log(`${client.user.tag} has started!`);
+		await noblox.cookieLogin(process.env.key);
+			});
 		//rbx.login({ username: "CreamyzRankingBot", password: process.env.rblx});
 	});
 
