@@ -33,7 +33,7 @@ module.exports.run = async (bot, message, args) => {
 						icon_url: bot.user.avatarURL
 					},
 					title: "Commands",
-					description: "Commands for Chopstick Bot",
+					description: "K | Kauai Server Bot Commands",
 					fields: [{
 						name: "Name",
 						value: props.help.name,
@@ -63,7 +63,7 @@ module.exports.run = async (bot, message, args) => {
 					timestamp: new Date(),
 					footer: {
 						icon_url: bot.user.avatarURL,
-						text: "By Lxphere"
+						text: "Bot created by Lxphere"
 					}
 				}
 			});
@@ -77,8 +77,8 @@ module.exports.run = async (bot, message, args) => {
 					name: bot.user.username,
 					icon_url: bot.user.avatarURL
 				},
-				title: "Commands",
-				description: "Commands for the Chopstick Bot!",
+				title: "K | Server Commands",
+				description: "K | Kauai Server Bot Commands",
 				fields: [{
 					name: "Moderation",
 					value: "`;announce` - Makes an announcement for the server. \n`;ban` - Bans a user from the server. \n`;kick` - Kicks a user out of the server. \n`;hannounce` - Makes an announcement with the @ here ping."
@@ -99,7 +99,7 @@ module.exports.run = async (bot, message, args) => {
 				timestamp: new Date(),
 				footer: {
 					icon_url: bot.user.avatarURL,
-					text: "By Lxphere"
+					text: "Bot created by Lxphere"
 				}
 			}
 		});
