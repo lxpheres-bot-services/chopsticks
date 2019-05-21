@@ -18,7 +18,7 @@ module.exports.run = async (bot, message) => {
 		title: "\n",
 		description: "\n",
 		fields: [{
-			name: "Chopstick Bot Uptime",
+			name: "K| Kauai Server Bot Uptime",
 			value: up,
 			inline: true
 		},
