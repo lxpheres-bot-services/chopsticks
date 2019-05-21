@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 	if (!message.member.roles.get("579601910890233856")) return message.reply("Nope, not today! You need to be an SHR+, nice try though.").catch(() => bot.safeSend(message, module.exports.help.name));
 		let embed = new Discord.RichEmbed()
 		.setTitle("K | Kauai Announcement")
-		.setColor("##fff993")
+		.setColor("#fff993")
 		.setDescription(args.join(" "))
 		.setFooter(`This announcement was made by ${message.author.tag}`, message.author.displayAvatarURL)
  		.setThumbnail("https://cdn.discordapp.com/attachments/438816225909276683/580512978277761025/image0.png");
