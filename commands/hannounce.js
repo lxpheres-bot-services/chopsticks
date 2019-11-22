@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
 		.setColor("#ff4b4b")
 		.setDescription(args.join(" "))
 		.setFooter(`Announcement made by ${message.author.tag}`, message.author.displayAvatarURL)
-	        .setThumbnail("https://cdn.discordapp.com/attachments/540914985036021770/552983211794235394/Adobe_Post_20190306_081657.jpg");
+	        .setThumbnail("https://media.discordapp.net/attachments/625147174371590165/647548131369812047/logo.png?width=585&height=585");
           bot.channels.get("540914985036021770").send("@here", {embed: embed}).then(() => {
 		message.reply("Message sent!");
 	}).catch(() => {
